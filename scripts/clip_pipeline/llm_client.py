@@ -29,7 +29,7 @@ except ImportError:
 # Configuration
 # ============================================================================
 
-GOOGLE_API_KEY = "***REDACTED***"
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 MODEL_NAME = "gemini-2.5-flash"  # 1M context, $0.15/$0.60 per 1M tokens
 
 
